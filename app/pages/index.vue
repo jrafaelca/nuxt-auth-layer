@@ -4,6 +4,7 @@
 
 <template>
   <div>
-    {{ $t('home') }}
+    <NuxtRouteAnnouncer/>
+    <NuxtWelcome/>
   </div>
 </template>
