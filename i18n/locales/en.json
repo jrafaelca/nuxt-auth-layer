@@ -1,3 +1,57 @@
 {
-
+  "auth": {
+    "action": {
+      "back_login": "Back to Login",
+      "forgot_password": "Forgot Password?",
+      "login": "Sign In",
+      "logout": "Log Out",
+      "register": "Sign Up",
+      "request_password": "Request Password Reset",
+      "reset_password": "Reset Password",
+      "send_email_verify": "Resend Verification Email"
+    },
+    "description": {
+      "email_verify": "We've sent a verification link to your email address.",
+      "forgot_password": "No worries! We’ll send you instructions to reset your password.",
+      "login": "Welcome back! Please enter your details to continue.",
+      "notification_password_updated": "Your password has been successfully changed. You can now log in with your new password.",
+      "notification_request_email_verify": "Check your inbox for the verification email and follow the instructions to verify your account.",
+      "notification_request_password": "Check your email to proceed with password recovery.",
+      "register": "Create your account in just a few steps.",
+      "reset_password": "Your new password must be different from your previous ones."
+    },
+    "help": {
+      "password": "Must be at least 8 characters long."
+    },
+    "label": {
+      "disabled": "Disabled",
+      "email": "Email",
+      "enabled": "Enabled",
+      "hide_password": "Hide Password",
+      "name": "Full Name",
+      "open_sidebar": "Open Sidebar",
+      "password": "Password",
+      "password_confirmation": "Confirm Password",
+      "registered": "Already have an account?",
+      "remember": "Remember Me",
+      "show_password": "Show Password",
+      "unregistered": "Don’t have an account?"
+    },
+    "placeholder": {
+      "email": "Enter your email",
+      "name": "Enter your full name",
+      "password": "Enter your password",
+      "password_confirmation": "Re-enter your password"
+    },
+    "title": {
+      "email_verify": "Verify Your Email",
+      "forgot_password": "Forgot Your Password?",
+      "login": "Log In to Your Account",
+      "notification_password_updated": "Password Updated Successfully",
+      "notification_request_email_verify": "Verification Email Resent",
+      "notification_request_password": "Password Reset Request Sent",
+      "register": "Create Your Account",
+      "reset_password": "Set a New Password"
+    }
+  }
 }

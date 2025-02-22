@@ -1,7 +1,26 @@
+<script setup>
+import * as locales from '@nuxt/ui/locale'
+
+const route = useRoute()
+const config = useRuntimeConfig()
+const { locale } = useI18n()
+
+const lang = computed(() => locales[locale.value].code)
+const dir = computed(() => locales[locale.value].dir)
+
+useHead({
+  titleTemplate: () => route.meta?.title
+    ? `%s | ${config.public.appName}`
+    : config.public.appName,
+  htmlAttrs: { lang, dir },
+})
+</script>
+
 <template>
-  <UApp>
+  <UApp :locale="locales[locale]">
+    <NuxtLoadingIndicator />
     <NuxtLayout>
-      <NuxtPage/>
+      <NuxtPage />
     </NuxtLayout>
   </UApp>
 </template>
