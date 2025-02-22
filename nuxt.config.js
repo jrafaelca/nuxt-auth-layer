@@ -13,6 +13,7 @@ export default defineNuxtConfig({
       appName: process.env.APP_NAME || 'NuxtAuthLayer',
       appUrl: process.env.APP_URL || 'http://localhost:3000',
       appLocale: process.env.APP_LOCALE || 'en',
+      apiBaseUrl: process.env.API_BASE_URL || 'http://localhost',
     },
   },
   future: {

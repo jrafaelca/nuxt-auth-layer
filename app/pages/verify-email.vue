@@ -23,7 +23,7 @@ async function resendVerifyNotification() {
     })
   }
   catch (error) {
-    //
+    console.error(error)
   }
 }
 </script>

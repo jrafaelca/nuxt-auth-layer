@@ -87,8 +87,8 @@ const appConfig = useAppConfig()
       v-if="appConfig.localSwitch || appConfig.colorSwitch"
       class="flex items-center justify-center gap-2"
     >
-      <LocaleDropdown v-if="appConfig.localSwitch" />
-      <ColorModeButton v-if="appConfig.colorSwitch" />
+      <AppLocaleDropdown v-if="appConfig.localSwitch" />
+      <AppColorModeButton v-if="appConfig.colorSwitch" />
     </div>
   </div>
 </template>
