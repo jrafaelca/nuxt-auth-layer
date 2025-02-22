@@ -1,3 +1,55 @@
 {
-
+  "auth": {
+    "action": {
+      "back_login": "Volver al inicio de sesión",
+      "forgot_password": "¿Olvidaste tu contraseña?",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión",
+      "register": "Registrarse",
+      "request_password": "Solicitar restablecimiento de contraseña",
+      "reset_password": "Restablecer contraseña",
+      "send_email_verify": "Reenviar correo de verificación"
+    },
+    "description": {
+      "email_verify": "Hemos enviado un enlace de verificación a tu dirección de correo electrónico.",
+      "forgot_password": "No te preocupes, te enviaremos instrucciones para restablecer tu contraseña.",
+      "login": "¡Bienvenido de nuevo! Ingresa tus datos para continuar.",
+      "notification_password_updated": "Tu contraseña se ha cambiado correctamente. Ahora puedes iniciar sesión con tu nueva contraseña.",
+      "notification_request_email_verify": "Revisa tu bandeja de entrada para el correo de verificación y sigue las instrucciones para verificar tu cuenta.",
+      "notification_request_password": "Revisa tu correo electrónico para continuar con la recuperación de contraseña.",
+      "register": "Crea tu cuenta en solo unos pasos.",
+      "reset_password": "Tu nueva contraseña debe ser diferente de las anteriores."
+    },
+    "help": {
+      "password": "Debe tener al menos 8 caracteres."
+    },
+    "label": {
+      "email": "Correo electrónico",
+      "hide_password": "Ocultar contraseña",
+      "name": "Nombre completo",
+      "open_sidebar": "Abrir menú lateral",
+      "password": "Contraseña",
+      "password_confirmation": "Confirmar contraseña",
+      "registered": "¿Ya tienes una cuenta?",
+      "remember": "Recuérdame",
+      "show_password": "Mostrar contraseña",
+      "unregistered": "¿No tienes una cuenta?"
+    },
+    "placeholder": {
+      "email": "Ingresa tu correo electrónico",
+      "name": "Ingresa tu nombre completo",
+      "password": "Ingresa tu contraseña",
+      "password_confirmation": "Reingresa tu contraseña"
+    },
+    "title": {
+      "email_verify": "Verifica tu correo electrónico",
+      "forgot_password": "¿Olvidaste tu contraseña?",
+      "login": "Inicia sesión en tu cuenta",
+      "notification_password_updated": "Contraseña actualizada correctamente",
+      "notification_request_email_verify": "Correo de verificación reenviado",
+      "notification_request_password": "Solicitud de restablecimiento enviada",
+      "register": "Crea tu cuenta",
+      "reset_password": "Establece una nueva contraseña"
+    }
+  }
 }

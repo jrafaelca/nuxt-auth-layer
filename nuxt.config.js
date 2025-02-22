@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  extends: [
+    ['github:jrafaelca/nuxt-common-layer', { install: true, auth: process.env.GITHUB_TOKEN }],
+  ],
   modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n'],
   ssr: false,
   devtools: { enabled: true },
