@@ -10,36 +10,28 @@ export const useAuth = () => {
     }
     catch (error) {
       user.value = null
+
+      console.error(error)
     }
   }
 
   async function login(credentials) {
-    try {
-      const response = await $api('/login', {
-        method: 'POST',
-        body: credentials,
-      })
+    const response = await $api('/login', {
+      method: 'POST',
+      body: credentials,
+    })
 
-      user.value = response
-      navigateTo('/', { replace: true })
+    user.value = response
+    navigateTo('/', { replace: true })
 
-      return response
-    }
-    catch (error) {
-      throw error
-    }
+    return response
   }
 
   async function logout() {
-    try {
-      await $api('/logout', { method: 'POST' })
+    await $api('/logout', { method: 'POST' })
 
-      user.value = null
-      navigateTo('/login', { replace: true })
-    }
-    catch (error) {
-      throw error
-    }
+    user.value = null
+    navigateTo('/login', { replace: true })
   }
 
   return {
