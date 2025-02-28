@@ -16,28 +16,36 @@ async function resendVerifyNotification() {
     })
 
     toast.add({
-      title: t('auth.title.notification_request_email_verify'),
-      description: t('auth.description.notification_request_email_verify'),
+      title: t('auth.title.notification_request_email_verify_success'),
+      description: t('auth.description.notification_request_email_verify_success'),
       color: 'info',
       icon: 'i-lucide-mail',
     })
   }
   catch (error) {
     console.error(error)
+    toast.add({
+      title: t('auth.title.notification_request_email_verify_failed'),
+      description: t('auth.description.notification_request_email_verify_failed'),
+      color: 'info',
+      icon: 'i-lucide-mail',
+    })
   }
 }
 </script>
 
 <template>
-  <AuthCard
-    :title="$t('auth.title.email_verify')"
-    :description="$t('auth.description.email_verify')"
-    icon="i-lucide-mail"
-  >
+  <div>
+    <AuthHeader
+      :title="$t('auth.title.email_verify')"
+      :description="$t('auth.description.email_verify')"
+      icon="i-lucide-mail"
+    />
+
     <UButton
       :label="$t('auth.action.send_email_verify')"
       block
       @click="resendVerifyNotification"
     />
-  </AuthCard>
+  </div>
 </template>

@@ -14,6 +14,7 @@ const items = computed(() => [{
   <UDropdownMenu :items="items">
     <UButton
       color="neutral"
+      variant="link"
       :avatar="{ alt: user.name, size: 'md' }"
       v-bind="$attrs"
     >

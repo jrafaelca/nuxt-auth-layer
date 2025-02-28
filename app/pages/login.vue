@@ -9,19 +9,20 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-  <AuthCard
-    :title="$t('auth.title.login')"
-    :description="$t('auth.description.login')"
-  >
+  <div>
+    <AuthHeader
+      :title="$t('auth.title.login')"
+      :description="$t('auth.description.login')"
+    />
+
     <AuthLoginForm />
 
     <div
       v-if="appConfig.auth.register"
-      class="text-center"
+      class="text-center mt-6"
     >
       <p class="text-sm text-[var(--ui-text-dimmed)]">
         {{ $t('auth.label.unregistered') }}
-
         <UButton
           :to="$localeRoute('register')"
           :label="$t('auth.action.register')"
@@ -30,5 +31,5 @@ const appConfig = useAppConfig()
         />
       </p>
     </div>
-  </AuthCard>
+  </div>
 </template>

@@ -7,23 +7,25 @@ definePageMeta({
 </script>
 
 <template>
-  <AuthCard
-    :title="$t('auth.title.register')"
-    :description="$t('auth.description.register')"
-  >
+  <div>
+    <AuthHeader
+      :title="$t('auth.title.register')"
+      :description="$t('auth.description.register')"
+    />
+
     <AuthRegisterForm />
 
-    <div class="text-center">
+    <div class="text-center mt-">
       <p class="text-sm text-[var(--ui-text-dimmed)]">
         {{ $t('auth.label.registered') }}
 
         <UButton
-          :to="$localeRoute({ name: 'login' })"
+          :to="$localeRoute('login')"
           :label="$t('auth.action.login')"
           variant="link"
           class="p-0"
         />
       </p>
     </div>
-  </AuthCard>
+  </div>
 </template>

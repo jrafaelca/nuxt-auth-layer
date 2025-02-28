@@ -1,13 +1,14 @@
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 import { defineNuxtConfig } from 'nuxt/config'
 
+const currentDir = dirname(fileURLToPath(import.meta.url))
+
 export default defineNuxtConfig({
-  extends: [
-    ['github:jrafaelca/nuxt-common-layer', { install: true, auth: process.env.GITHUB_TOKEN }],
-  ],
   modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n'],
   ssr: false,
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: [join(currentDir, './app/assets/css/main.css')],
   runtimeConfig: {
     public: {
       appName: process.env.APP_NAME || 'NuxtAuthLayer',

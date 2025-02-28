@@ -12,15 +12,26 @@ const token = route.params.token
 </script>
 
 <template>
-  <AuthCard
-    :title="$t('auth.title.reset_password')"
-    :description="$t('auth.description.reset_password')"
-    icon="i-lucide-lock-keyhole"
-    backeable
-  >
+  <div>
+    <AuthHeader
+      :title="$t('auth.title.reset_password')"
+      :description="$t('auth.description.reset_password')"
+      icon="i-lucide-lock-keyhole"
+    />
+
     <AuthResetPasswordForm
       :email="email"
       :token="token"
     />
-  </AuthCard>
+
+    <div class="text-center mt-6">
+      <UButton
+        :to="$localeRoute('login')"
+        :label="$t('auth.action.back_login')"
+        variant="link"
+        color="neutral"
+        icon="i-lucide-arrow-left"
+      />
+    </div>
+  </div>
 </template>

@@ -11,11 +11,13 @@
       "send_email_verify": "Reenviar correo de verificación"
     },
     "description": {
+      "403": "No tienes permiso para acceder a esta página. Por favor, contacta al administrador si crees que esto es un error.",
       "email_verify": "Hemos enviado un enlace de verificación a tu dirección de correo electrónico.",
       "forgot_password": "No te preocupes, te enviaremos instrucciones para restablecer tu contraseña.",
       "login": "¡Bienvenido de nuevo! Ingresa tus datos para continuar.",
       "notification_password_updated": "Tu contraseña se ha cambiado correctamente. Ahora puedes iniciar sesión con tu nueva contraseña.",
-      "notification_request_email_verify": "Revisa tu bandeja de entrada para el correo de verificación y sigue las instrucciones para verificar tu cuenta.",
+      "notification_request_email_verify_failed": "Lo sentimos, no pudimos enviar el correo de verificación. Por favor, intenta nuevamente más tarde o contacta al soporte técnico.",
+      "notification_request_email_verify_success": "Revisa tu bandeja de entrada para el correo de verificación y sigue las instrucciones para verificar tu cuenta.",
       "notification_request_password": "Revisa tu correo electrónico para continuar con la recuperación de contraseña.",
       "register": "Crea tu cuenta en solo unos pasos.",
       "reset_password": "Tu nueva contraseña debe ser diferente de las anteriores."
@@ -46,7 +48,8 @@
       "forgot_password": "¿Olvidaste tu contraseña?",
       "login": "Inicia sesión en tu cuenta",
       "notification_password_updated": "Contraseña actualizada correctamente",
-      "notification_request_email_verify": "Correo de verificación reenviado",
+      "notification_request_email_verify_failed": "No se pudo reenviar el correo de verificación",
+      "notification_request_email_verify_success": "Correo de verificación reenviado",
       "notification_request_password": "Solicitud de restablecimiento enviada",
       "register": "Crea tu cuenta",
       "reset_password": "Establece una nueva contraseña"
