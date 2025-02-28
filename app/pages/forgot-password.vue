@@ -7,12 +7,23 @@ definePageMeta({
 </script>
 
 <template>
-  <AuthCard
-    :title="$t('auth.title.forgot_password')"
-    :description="$t('auth.description.forgot_password')"
-    icon="i-lucide-key-round"
-    backeable
-  >
+  <div>
+    <AuthHeader
+      :title="$t('auth.title.forgot_password')"
+      :description="$t('auth.description.forgot_password')"
+      icon="i-lucide-key-round"
+    />
+
     <AuthForgotPasswordForm />
-  </AuthCard>
+
+    <div class="text-center mt-6">
+      <UButton
+        :to="$localeRoute('login')"
+        :label="$t('auth.action.back_login')"
+        variant="link"
+        color="neutral"
+        icon="i-lucide-arrow-left"
+      />
+    </div>
+  </div>
 </template>

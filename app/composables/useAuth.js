@@ -1,5 +1,6 @@
 export const useAuth = () => {
   const { $api } = useNuxtApp()
+
   const user = useState('user', () => null)
   const isAuthenticated = computed(() => user.value !== null)
 
@@ -9,6 +10,7 @@ export const useAuth = () => {
       user.value = data
     }
     catch (error) {
+      console.error(error)
       user.value = null
 
       console.error(error)
